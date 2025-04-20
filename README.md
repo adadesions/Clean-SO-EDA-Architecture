@@ -30,6 +30,25 @@ Assets/
 
 ---
 
+## 📦 Dependencies
+
+This project uses the following external packages:
+
+- [UniTask](https://github.com/Cysharp/UniTask) - Provides an efficient async/await implementation for Unity
+- [VContainer](https://github.com/hadashiA/VContainer) - A lightweight DI (Dependency Injection) container for Unity
+
+To install these dependencies:
+
+1. Open the Unity Package Manager (Window > Package Manager)
+2. Click the '+' button and select "Add package from git URL"
+3. Enter the following URLs:
+   ```
+   https://github.com/Cysharp/UniTask.git
+   https://github.com/hadashiA/VContainer.git
+   ```
+
+---
+
 ## 🔌 VContainer Setup
 
 ### GameLifetimeScope.cs
@@ -150,7 +169,7 @@ public interface IPlayerService
 
 - Use `RegisterComponentInHierarchy<T>()` to inject into scene MonoBehaviours
 - Use `SetActiveListOnBoolEvent` if you want to enable/disable many objects at once
-- You don’t need to register all SO Events unless they are injected (use in use cases or services)
+- You don't need to register all SO Events unless they are injected (use in use cases or services)
 - Keep UI logic dumb — let UseCases coordinate logic, and Events communicate results
 
 ---
@@ -183,4 +202,4 @@ MIT
 
 ---
 
-> 💡 “Architecture should scale with the game — this template lets you build cleanly from day one.”
+> 💡 "Architecture should scale with the game — this template lets you build cleanly from day one."
