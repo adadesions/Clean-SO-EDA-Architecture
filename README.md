@@ -22,10 +22,10 @@ Assets/
 │   │       └── PlayerDataDto.cs
 │   ├── Infrastructure/
 │   │   └── PlayerService.cs
-│   ├── Features/
-│   │   └── PlayerLogin/       ← MonoBehaviours, triggers, input UI
-│   └── Game/
-│       └── GameLifetimeScope.cs
+│   ├── Application/
+│   │   └── Usecase/       ← MonoBehaviours, triggers, input UI
+│   └── Presentation/
+│       └── PopupController.cs
 ```
 
 ---
